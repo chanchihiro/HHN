@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var babel = require("gulp-babel");
 var sass = require("gulp-sass"); //sassのコンパイル
+var compass = require("gulp-compass"); //compassのコンパイる
 var autoprefixer = require("gulp-autoprefixer"); //弁ダープレフィックスつける
 var frontnote = require("gulp-frontnote"); //スタイルガイドの作成
 var uglify = require("gulp-uglify"); //jsの圧縮
@@ -33,7 +34,7 @@ gulp.task('babel', function() {
 
 gulp.task("build", function(){
 	browserify({entries: ["src/js/index.js"]})
-		.transform(babelify,{presets: ['es2015',"react"]})
+		.transform(babelify,{presets: ['es2015']})
 		.bundle()
 		.on("error",errorHandler)
 		.pipe(source('bundle.js'))
@@ -45,6 +46,7 @@ gulp.task("build", function(){
 
 gulp.task("server",function(){
 	browser({
+		port: 8888,
 		server:{
 			baseDir:"./public"
 		}
@@ -71,12 +73,23 @@ gulp.task("sass",function(){
 });
 
 
+gulp.task("jade",function(){
+	gulp.src("src/views/*.jade")
+		.pipe(plumber())
+		.pipe(jade({
+			pretty:true
+		}))
+		.pipe(gulp.dest("./public"));
+	browser.reload();
+});
+
 
 gulp.task("default",["server","babel"],function(){
 	gulp.src('public/style.css')
         .pipe(gcmq())
         .pipe(gulp.dest('public.css'));
 	gulp.watch("src/styles/*.scss",["sass"]);
+	gulp.watch("src/views/*.jade",["jade"]);
 	gulp.watch("src/js/*.es6",["babel"]);
 	gulp.watch('src/js/*.js', ['build']);
 	gulp.watch("src/js/components/*.js", ["build"]);
