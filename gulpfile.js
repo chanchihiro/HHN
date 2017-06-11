@@ -61,7 +61,7 @@ gulp.src('public/**/guide.css')
 
 
 gulp.task("sass",function(){
-	gulp.src("src/styles/*.scss")
+	gulp.src("src/styles/*.scss,lib/")
 		.pipe(plumber())
 		.pipe(frontnote({
 			css:"public/css/style.css"
