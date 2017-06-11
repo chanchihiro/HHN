@@ -201,6 +201,8 @@ header {
   height: 520px;
   overflow: hidden;
   margin-top: 100px; }
+  .main-visual img {
+    width: 100%; }
 
 .title {
   width: 600px; }
@@ -209,6 +211,8 @@ header {
   text-align: center;
   background-color: #f8f8f8;
   font-family: "Yu Gothic", YuGothic; }
+  .about img {
+    width: 100%; }
   .about .text {
     margin-top: 100px;
     font-size: 18px;
