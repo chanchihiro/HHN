@@ -188,7 +188,8 @@ header {
   header .namis {
     position: absolute;
     bottom: -125px;
-    z-index: 100; }
+    z-index: 100;
+    width: 100%; }
   header .clear {
     clear: both; }
 
@@ -211,7 +212,7 @@ header {
   text-align: center;
   background-color: #f8f8f8;
   font-family: "Yu Gothic", YuGothic; }
-  .about img {
+  .about .grade {
     width: 100%; }
   .about .text {
     margin-top: 100px;
