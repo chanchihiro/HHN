@@ -138,8 +138,13 @@
   padding: 8rem 8rem; }
 
 .com-about {
-  padding-top: 200px;
-  background-color: #f8f8f8; }
+  padding-top: 100px;
+  background-color: #f8f8f8;
+  text-align: center; }
+  .com-about img {
+    width: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 body {
   font-family: "yu gothic", sans-serif;
