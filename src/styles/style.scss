@@ -8,7 +8,7 @@ body {
 	font-family: "yu gothic", sans-serif;
 	font-size: 14px;
 	color: #222222;
-	background-color: #e0f2f2;
+	background-color: #fff;
 }
 
 ::selection {
@@ -20,34 +20,37 @@ body {
 
 header {
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	background-color: #fff;
 	z-index: 100;
 	position: relative;
-	overflow: hidden;
 	top: 0;
 	h1 {
 		text-align: center;
 		img {
-			width: 180px;
+			width: 200px;
 			padding-top: 50px;
 		}
 	}
 	nav {
-		width: 400px;
+		width: 600px;
 		padding-top: 30px;
 		margin: 0 auto 0px;
 		overflow: hidden;
 		font-family: "Yu Gothic", YuGothic;
 		background-color: #fff;
 		font-weight: bold;
-		ul{
+		ul {
 			background-color: #fff;
-			li{
+			li {
 				float: left;
 				list-style-type: none;
-				padding-left: 26px;
-				a{
+				padding-left: 80px;
+				letter-spacing: 4px;
+				&:first-child {
+					padding-left: 0px;
+				}
+				a {
 					display: block;
 					text-decoration: none;
 					color: #000;
@@ -57,8 +60,11 @@ header {
 	}
 	.namis {
 		position: absolute;
-		bottom: 100px;
+		bottom: -125px;
 		z-index: 100;
+	}
+	.clear {
+		clear: both;
 	}
 }
 
@@ -67,7 +73,7 @@ header {
 	background-size: cover;
 	background-position: center -300px;
 	position: relative;
-	background-color: #fff;
+	background-color: #e0f2f2;
 	height: 520px;
 	overflow: hidden;
 	margin-top: 100px;
@@ -79,7 +85,7 @@ header {
 
 .about {
 	text-align: center;
-	background-color: #fff;
+	background-color: #f8f8f8;
 	font-family: "Yu Gothic", YuGothic;
 	.text{
 		margin-top: 100px;
@@ -106,51 +112,57 @@ header {
 		background-size: cover;
 	}
 }
-
-.jiku {
-	width: 1054px;
-	margin: 100px auto 0;
-	text-align: center;
-	overflow: hidden;
-	.space {
-		margin-top: 70px;
-		width: 400px;
+.jiku{
+	width: 100%;
+	background-color: #f8f8f8;
+	padding: 100px 0px;
+	.jiku-inner {
+		width: 1054px;
+		margin: 0px auto 0;
 		text-align: center;
-		padding: 0 50px;
-		float: left;
-		img {
-			width: 328px;
-			margin-bottom: 40px;
-		}
-		h3 {
-			margin-bottom: 20px;
-			font-size: 24px;
-			letter-spacing: 4px;
-		}
-		.setumei {
-			font-weight: bold;
-			font-size: 15px;
-			line-height: 32px;
-			letter-spacing: 3px;
-		}
-		.btn {
-			margin-top: 10px;
-			display: inline-block;
-			width: 200px;
-			background-color: #2e3547;
-			font-size: 15px;
-			color: #fff;
-			letter-spacing: 3px;
-			text-decoration: none;
-			height: 43px;
-			line-height: 43px;
+		overflow: hidden;
+		background-color: #f8f8f8;
+		.space {
+			margin-top: 70px;
+			width: 400px;
+			text-align: center;
+			padding: 0 50px;
+			float: left;
+			img {
+				width: 328px;
+				margin-bottom: 40px;
+			}
+			h3 {
+				margin-bottom: 20px;
+				font-size: 24px;
+				letter-spacing: 4px;
+			}
+			.setumei {
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 32px;
+				letter-spacing: 3px;
+			}
+			.btn {
+				margin-top: 10px;
+				display: inline-block;
+				width: 200px;
+				background-color: #2e3547;
+				font-size: 15px;
+				color: #fff;
+				letter-spacing: 3px;
+				text-decoration: none;
+				height: 43px;
+				line-height: 43px;
+			}
 		}
 	}
 }
 
 .nozoku {
 	text-align: center;
-	margin-top: 160px;
+	background-color: #e0f2f2;
+	padding-top: 100px;
 	font-family: "Yu Gothic", YuGothic;
 	.text{
 		margin-top: 80px;
@@ -164,7 +176,6 @@ header {
 footer {
 	width: 100%;
 	background-color: #2e3547;
-	height: 300px;
 	color: #fff;
 	a {
 		text-decoration: none;
@@ -174,11 +185,52 @@ footer {
 		width: 300px;
 		margin: 0 auto;
 		ul {
+			padding-top: 50px;
 			li {
 				list-style-type: none;
 				float: left;
-				
+				margin: 0px 15px;
+				font-size: 12px;
+				letter-spacing: 3px;
+				a {
+					display: block;
+				}
 			}
+		}
+		.sns {
+			width: 140px;
+			height: 40px;
+			display: inline-block;
+			line-height: 40px;
+			text-align: center;
+			letter-spacing: 3px;
+			margin-right: 20px;
+			margin-top: 40px;
+			border-radius: 3px;
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+		.face {
+			background-color: $facebook;
+		}
+		.twi {
+			background-color: $twitter;
+		}
+	}
+	.f-copyright {
+		width: 260px;
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		font-size: 8px;
+		overflow: hidden;
+		margin-top: 20px;
+		.hhn {
+			float: left;
+		}
+		.chanchihiro {
+			float: right;
 		}
 	}
 }
