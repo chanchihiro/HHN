@@ -139,18 +139,63 @@
 
 .com-about {
   padding-top: 100px;
+  padding-bottom: 60px;
   background-color: #f8f8f8;
   text-align: center; }
-  .com-about img {
-    width: 40px;
+  .com-about h2 {
+    font-size: 40px; }
+  .com-about .point {
+    width: 34px;
     padding-top: 20px;
     padding-bottom: 20px; }
+  .com-about p.setumei2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 40px; }
+  .com-about .click {
+    width: 400px;
+    margin-top: 40px; }
+
+.machi {
+  width: 100%;
+  height: 720px;
+  background-color: #e0f2f2;
+  margin-bottom: 100px; }
+
+.com-about {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #f8f8f8;
+  text-align: center; }
+  .com-about h2 {
+    font-size: 40px; }
+  .com-about .point {
+    width: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .com-about p.setumei2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 40px; }
+  .com-about .click {
+    width: 400px;
+    margin-top: 40px; }
+
+.machi {
+  width: 100%;
+  height: 720px;
+  background-color: #e0f2f2;
+  margin-bottom: 100px; }
 
 body {
   font-family: "yu gothic", sans-serif;
   font-size: 14px;
-  color: #222222;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  color: #2e3547; }
 
 ::-moz-selection {
   background-color: #ff0033; }
@@ -186,7 +231,7 @@ header {
       header nav ul li {
         float: left;
         list-style-type: none;
-        padding-left: 80px;
+        padding-left: 74px;
         letter-spacing: 4px; }
         header nav ul li:first-child {
           padding-left: 0px; }
@@ -345,3 +390,50 @@ footer {
       float: left; }
     footer .f-copyright .chanchihiro {
       float: right; }
+
+.map_header {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background-color: #f8f8f8; }
+  .map_header h1 {
+    width: 300px;
+    float: left; }
+    .map_header h1 img {
+      width: 140px;
+      padding: 10px 40px; }
+  .map_header .map_nav {
+    float: left; }
+    .map_header .map_nav ul li {
+      list-style-type: none;
+      float: left; }
+      .map_header .map_nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #2e3547; }
+
+.side-menu {
+  width: 24%;
+  background-color: #f8f8f8;
+  height: 90vh;
+  float: left; }
+  .side-menu .btns {
+    border-bottom: 1px solid #2e3547; }
+    .side-menu .btns .m-btns {
+      width: 50%;
+      height: 60px;
+      display: inline-block;
+      background-color: #f8f8f8;
+      text-decoration: none;
+      line-height: 60px;
+      text-align: center;
+      color: #2e3547; }
+    .side-menu .btns .map-com {
+      background-color: #2e3547;
+      color: #fff; }
+
+.hongou_map {
+  width: 76%;
+  height: 90vh;
+  background-color: #000;
+  margin-left: 24%; }

@@ -4,13 +4,14 @@
 @import "lib/layout";
 @import "lib/mixins";
 @import "lib/community";
+@import "lib/startup";
 
 
 body {
 	font-family: "yu gothic", sans-serif;
 	font-size: 14px;
-	color: #222222;
 	background-color: #f8f8f8;
+	color: #2e3547;
 }
 
 ::selection {
@@ -47,7 +48,7 @@ header {
 			li {
 				float: left;
 				list-style-type: none;
-				padding-left: 80px;
+				padding-left: 74px;
 				letter-spacing: 4px;
 				&:first-child {
 					padding-left: 0px;
@@ -245,3 +246,76 @@ footer {
 		}
 	}
 }
+
+///////////////////////////// map.html
+
+.map_header {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #000;
+	background-color: #f8f8f8;
+	h1 {
+		width: 300px;
+		float: left;
+		img{
+			width: 140px;
+			padding: 10px 40px;
+		}
+	}
+	.map_nav {
+		float: left;
+		ul {
+			li {
+				list-style-type: none;
+				float: left;
+				a {
+					display: block;
+					text-decoration: none;
+					color: #2e3547;
+				}
+			}
+		}
+	}
+}
+
+.side-menu {
+	width: 24%;
+	background-color: #f8f8f8;
+	height: 90vh;
+	float: left;
+	.btns {
+		border-bottom: 1px solid #2e3547;
+		.m-btns {
+			width: 50%;
+			height: 60px;
+			display: inline-block;
+			background-color: #f8f8f8;
+			text-decoration: none;
+			line-height: 60px;
+			text-align: center;
+			color: #2e3547;
+		}
+		.map-com {
+			background-color: #2e3547;
+			color: #fff;
+		}
+	}
+}
+
+.hongou_map {
+	width: 76%;
+	height: 90vh;
+	background-color: #000;
+	margin-left: 24%;
+}
+
+
+
+
+
+
+
+
+
+
+
