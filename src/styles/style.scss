@@ -247,13 +247,15 @@ footer {
 	}
 }
 
-///////////////////////////// map.html
+////////////////////////////////////////////////////////////////////// map.html
 
 .map_header {
 	width: 100%;
 	overflow: hidden;
 	border-bottom: 1px solid #000;
 	background-color: #f8f8f8;
+	padding-right: 100px;
+	box-sizing: border-box;
 	h1 {
 		width: 300px;
 		float: left;
@@ -263,11 +265,13 @@ footer {
 		}
 	}
 	.map_nav {
-		float: left;
+		float: right;
 		ul {
+			padding-top: 40px;
 			li {
 				list-style-type: none;
 				float: left;
+				padding-left: 50px;
 				a {
 					display: block;
 					text-decoration: none;

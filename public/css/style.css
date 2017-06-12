@@ -395,7 +395,9 @@ footer {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid #000;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding-right: 100px;
+  box-sizing: border-box; }
   .map_header h1 {
     width: 300px;
     float: left; }
@@ -403,14 +405,17 @@ footer {
       width: 140px;
       padding: 10px 40px; }
   .map_header .map_nav {
-    float: left; }
-    .map_header .map_nav ul li {
-      list-style-type: none;
-      float: left; }
-      .map_header .map_nav ul li a {
-        display: block;
-        text-decoration: none;
-        color: #2e3547; }
+    float: right; }
+    .map_header .map_nav ul {
+      padding-top: 40px; }
+      .map_header .map_nav ul li {
+        list-style-type: none;
+        float: left;
+        padding-left: 50px; }
+        .map_header .map_nav ul li a {
+          display: block;
+          text-decoration: none;
+          color: #2e3547; }
 
 .side-menu {
   width: 24%;
